@@ -1,4 +1,5 @@
 function convert(s: string, numRows: number): string {
+  if (numRows === 1) return s;
   const stringArray = new Array(numRows).fill("");
   let index = 0;
   let direction = "forward";
